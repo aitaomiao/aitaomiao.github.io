@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站建设中 | 敬请期待</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 淡天蓝色背景，全屏布局 */
+        body {
+            background-color: #e6f7ff; /* 淡天蓝色底色 */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #1f2937;
+            position: relative;
+        }
+
+        /* 建设中主文案样式 */
+        .under-construction {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #0a58ca;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* 下方1/3位置的链接文字样式（核心修改） */
+        .bottom-link {
+            position: absolute;
+            bottom: 33.3%; /* 精准定位到页面下方1/3处 */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .bottom-link a {
+            font-size: 16px; /* 稍小的字号 */
+            color: #0a58ca; /* 深蓝色文字 */
+            text-decoration: underline; /* 下划线标识链接 */
+            transition: color 0.3s ease;
+        }
+
+        /* 鼠标悬浮文字变色 */
+        .bottom-link a:hover {
+            color: #084298; /* 悬浮加深蓝色 */
+        }
+
+        /* 响应式适配手机 */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 32px;
+            }
+            .sub-title {
+                font-size: 16px;
+            }
+            .bottom-link a {
+                font-size: 14px; /* 手机端字号更小 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="under-construction">
+        <h1 class="main-title">网站建设中</h1>
+        <p class="sub-title">我们正在全力打造全新的网站体验<br>敬请期待，精彩即将上线！</p>
+    </div>
+
+    <!-- 下方1/3位置的链接文字 -->
+    <div class="bottom-link">
+        <a href="https://dtk.oursea.com.cn" target="_blank">点击爱淘喵进来省钱</a>
+    </div>
+</body>
+</html>
